@@ -1,10 +1,7 @@
 # imgui-starter
 
-Using the provided code provided here you have a base Dear IMGUI project for Windows and macOS. There is a basic CMakefile in this project that includes the necessary files to create an application that brings up just a basic screen.
+Written on MacOS.
 
-You must add a logging system to this code that you will be using THROUGHOUT the quarter. This logging system should do two things.
+I didn't have any questions that I had to go to the instructor about, however, I did have a lot that I had to work out on my own. First of all, it's been a while since I last coded in C++, so I had a lot of reviewing to do. Second, I had to learn dearImGUI. I'm not that experienced with reading documentation, so this also took a while. 
 
-It should be able to log to a Dear IMGUI debug console
-It should also log its output to a file.
-
-For the submission, make a branch of this repo and submit a new GitHub URL
+The last thing was that upon viewing the instructor's original code located in application.cpp, I didn't really understand how his functions were supposed to work. He prompted us with calling an info log function and a game log function, despite the fact that info and game aren't in the same log category. Instead, I decided to write logInfo, logWarning, and logError functions, and have an extra parameter in each which would determine whether the log was a regular system log or a game log.
