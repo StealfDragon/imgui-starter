@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-clang++"
+	BuildStamp="20251010-2329-Experimental"
+	Name="eduroam-169-233-239-29.ucsc.edu"
+	Generator="ctest-4.1.2"
+	CompilerName="/usr/bin/clang++"
+	CompilerVersion="15.0.0.15000309"
+	OSName="macOS"
+	Hostname="Cassians-Laptop.local"
+	OSRelease="26.0.1"
+	OSVersion="25A362"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="Apple"
+	VendorID="Apple"
+	FamilyID="0"
+	ModelID="0"
+	ModelName="Apple M1"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="8192"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Oct 15 14:02 PDT</StartDateTime>
+		<StartTestTime>1760562137</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 15 14:02 PDT</EndDateTime>
+		<EndTestTime>1760562137</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

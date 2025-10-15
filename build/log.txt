@@ -1,0 +1,7 @@
+[14:01:41][SYSTEM][INFO] Game started successfully
+[14:01:41][GAME][INFO] Application initialized
+[14:01:41][SYSTEM][WARN] This is a test warning message
+[14:01:41][SYSTEM][ERROR] This is a test error message
+[14:01:44][SYSTEM][INFO] This is a test info message
+[14:01:45][SYSTEM][WARN] This is a test warning message
+[14:01:45][SYSTEM][ERROR] This is a test error message

@@ -1,4 +1,5 @@
 #include "Application.h"
+#include "Logger.h"
 #include "imgui/imgui.h"
 
 namespace ClassGame {
@@ -13,9 +14,11 @@ namespace ClassGame {
         void GameStartUp() 
         {
             // Initialize logging system
-//            Logger& logger = Logger::GetInstance();
-//            logger.LogInfo("Game started successfully");
-//            logger.LogGameEvent("Application initialized");
+            Logger& logger = Logger::GetInstance();
+            logger.LogInfo("Game started successfully");
+            logger.LogInfo("Application initialized", "GAME");
+            logger.LogWarning("This is a test warning message");
+            logger.LogError("This is a test error message");
         }
 
         //
@@ -25,9 +28,9 @@ namespace ClassGame {
         void RenderGame() 
         {
             ImGui::DockSpaceOverViewport();
-            ImGui::ShowDemoWindow();
+            //ImGui::ShowDemoWindow();
 
-            ImGui::Begin("ImGui Log Demo");
+            /* ImGui::Begin("ImGui Log Demo");
             ImGui::LogButtons();
 
             if (ImGui::Button("Copy \"Hello, world!\" to clipboard"))
@@ -36,7 +39,16 @@ namespace ClassGame {
                 ImGui::LogText("Hello, world!");
                 ImGui::LogFinish();
             }
+
+            ImGui::End(); */
+
+            ImGui::Begin("Game Log");
+                Logger& logger = Logger::GetInstance();
+                logger.DrawConsole();
             ImGui::End();
+
+            //ImGui::Separator();
+            //ImGui::End();
         }
 
         //

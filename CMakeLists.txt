@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 4.0.0)
 project(tictactoe VERSION 0.1.0 LANGUAGES C CXX)
 
 # check for macOS
@@ -48,6 +48,7 @@ else() # Linux
 endif()
 
 add_executable(demo Application.cpp
+                    Logger.cpp
                           imgui/imgui_demo.cpp
                           imgui/imgui_draw.cpp
                           imgui/imgui_tables.cpp
